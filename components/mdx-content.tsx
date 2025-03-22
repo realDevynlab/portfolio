@@ -1,9 +1,13 @@
-import { JSX } from "react"
-import { MDXRemote, MDXRemoteProps } from "next-mdx-remote/rsc"
-import { highlight } from "sugar-high"
-import Counter from "@/components/counter"
+import React, { JSX } from 'react'
+import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote/rsc'
+import { highlight } from 'sugar-high'
+import Counter from '@/components/counter'
 
-function Code({ children, ...props }: any) {
+interface CodeProps extends React.HTMLAttributes<HTMLElement> {
+  children: string
+}
+
+function Code({ children, ...props }: CodeProps) {
   const codeHTML = highlight(children)
   return <code dangerouslySetInnerHTML={{ __html: codeHTML }} {...props} />
 }
