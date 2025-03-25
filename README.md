@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# My Portfolio Website
 
-## Getting Started
+This repository contains the source code for my personal portfolio website, built using Next.js 15 with the App
+Router, Tailwind CSS v4.0, shadcn/ui, next-themes, next-mdx-remote,
+and sugar-high.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Project Description](#project-description)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Development](#development)
+- [Future Improvements](#future-improvements)
+- [Author](#author)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Description
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This portfolio website serves as a showcase of my skills, projects, and blog posts. It's designed to provide a clean and
+intuitive user experience, highlighting my expertise as a fullstack developer.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Homepage:** Introduces myself and provides a brief overview of my skills and experience.
+- **Posts Page:** Displays a list of my blog posts, rendered using MDX with `next-mdx-remote` and syntax highlighting
+  with `sugar-high`.
+- **Projects Page:** Showcases my projects with descriptions, links, and relevant technologies used.
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Frontend:**
+    - Next.js 15.2.2 (App Router)
+    - React
+    - Tailwind CSS v4.0
+    - shadcn/ui (for UI components)
+    - next-themes (for dark mode)
+    - next-mdx-remote (for rendering MDX content)
+    - sugar-high (for syntax highlighting in MDX)
+- **Development Tools:**
+    - Node.js
+    - npm
+    - WebStorm (Frontend)
+    - VSCode (General)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/realDevynlab/portfolio.git
+   cd portfolio
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open your browser and navigate to `http://localhost:3000` to view the application.
+
+## Development
+
+- **Frontend Development:**
+    - Use your preferred code editor to edit and develop the Next.js application.
+    - The `app` directory contains the application's routes and components.
+    - Tailwind CSS is used for styling. Refer to the Tailwind CSS documentation for usage.
+    - shadcn/ui provides pre-built UI components. Refer to the shadcn/ui documentation for usage.
+    - MDX files for blog posts are located in the `content/posts` directory.
+
+## Future Improvements
+
+- Add more detailed project descriptions and images.
+- Implement a contact form.
+- Expand the blog with more articles.
+- Optimize performance and accessibility.
+- Add more advanced features like server search functionality.
+- Improve SEO.
+- Add unit and integration tests.
+- Add more backend services if needed for enhanced features.
+
+## Author
+
+Laban Kosgey - [realDevynlab](https://github.com/realDevynlab)
