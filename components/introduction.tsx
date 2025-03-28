@@ -11,7 +11,7 @@ export default function Intro() {
           sharing knowledge with others.
         </p>
       </div>
-      <div className='relative'>
+      <div className='relative hidden md:block'>
         <Image
           className='flex-1 rounded-lg grayscale'
           src={authorImage}
