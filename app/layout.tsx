@@ -7,7 +7,10 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
